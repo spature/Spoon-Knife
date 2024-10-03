@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --JetFont: "JetBrains Mono", monospace;
+  --default-background: #ffffff;
+  --default-text:#0e0e0e;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--default-background);
+  color: var(--default-text);
+}
+
+#app{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#app .fork{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+#app .fork img{
+  width: 100%;
+  height: auto;
+}
+
+#app .fork h2{
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-family: var(--JetFont);
+}
+
+#app .fork a{
+  text-decoration: none;
+  color: blue;
+}
